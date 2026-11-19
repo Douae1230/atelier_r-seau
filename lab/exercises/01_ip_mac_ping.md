@@ -35,18 +35,18 @@ sur la ligne `inet` se trouvent l'**adresse IP** et le **masque** (après le `/`
 
 | Information        | Valeur pour le client |
 | ------------------ | --------------------- |
-| Nom de l'interface | …                     |
-| Adresse MAC        | …                     |
-| Adresse IP         | …                     |
-| Masque (notation `/`) | …                  |
-| Adresse du réseau  | …                     |
+| Nom de l'interface | …  etho                   |
+| Adresse MAC        | …  da:e0:61:07:4c:d0                   |
+| Adresse IP         | …   172.20.1.50                |
+| Masque (notation `/`) | … /24            |
+| Adresse du réseau  | …   172.20.1.50                  |
 
 **Question A.2.** Le masque est `/24`. Combien de machines différentes peut-on placer dans ce réseau ?
 (Indice : le dernier nombre de l'adresse peut varier de 0 à 255, mais 2 valeurs sont réservées.)
 
 > 💬 **Votre réponse :**
 >
-> _Remplacez ce texte par votre réponse._
+> 254 machines différentes
 
 ### Étape 2 — Ma passerelle
 
@@ -65,7 +65,8 @@ ip route
 
 > 💬 **Votre réponse :**
 >
-> _Remplacez ce texte par votre réponse._
+> Adresse de la passerelle : 172.20.1.254
+> Machine : nat-router
 
 ---
 
@@ -182,7 +183,7 @@ ping -c 2 -W 2 8.8.8.8
 
 | Notion        | Explication en une phrase |
 | ------------- | ------------------------- |
-| Adresse IP    | …                         |
+| Adresse IP    | …                          |
 | Adresse MAC   | …                         |
 | Passerelle    | …                         |
 | ARP           | …                         |
